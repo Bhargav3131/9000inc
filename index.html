@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>9000Inc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ******************* NAV SECTION ************** -->
+  <nav>
+     <img class="navbar-logo" src="images/9000incyt.jpg" alt="">
+    <div class="nav-menus">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#youtube">Youtube</a></li>
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li>
+          <!-- ******************* Login SECTION ************** -->
+          <button id="toggleButton">LOGIN/SIGNUP</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ******************* HOME SECTION ************** -->
+  <section id="home">
+    <!--<h2>Welcome to 9000INC</h2>
+    <h3>Here we do a lot of games, regular exciting giveaways, multiple game servers and a lot of more exciting stuff!!</h3>
+    <h3>Join Us now!</h3>-->
+  </section>
+
+  <!-- ******************* Youtube SECTION ************** -->
+  <section id="youtube">
+    <div class="channel">
+      <img src="images/9000incyt.jpg" alt="9000INC yt logo">
+      <h1>9000INC</h1>
+      <p>Welcome to 9000INC's youtube channel here we post a wide variety of content ranging from tutorials, reviews,
+        gaming, community events & much more! If you enjoy our content do not forget to like and subscribe for more:)
+      </p>
+    </div>
+    <div class="ytembeded">
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA"></iframe>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA&index=3"></iframe>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA&index=4"></iframe>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA&index=5"></iframe>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA&index=6"></iframe>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUG8uMTMNqUWynSM-8DMZ1hA&index=7"></iframe>
+    </div>
+  </section>
+
+  <!-- ******************* Discord SECTION ************** -->
+  <section id="discord">
+    <div class="dcjoinbutton-wrapper">
+      <h3>Join the 9000INC discord for exciting giveaways and much more!!</h3>
+      <button class="dcjoinbutton" onclick="document.location='https://discord.gg'">JOIN NOW</button>
+    </div>
+    <div class="dcembeded">
+      <iframe src="https://discord.com/widget?id=780682319093563436&theme=dark" width="700" height="500"
+        allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </section>
+
+  <!-- ******************* Login SECTION ************** -->
+  <div id="myContainer" class="overlay">
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Create Your Account</h1>
+          <input type="text" placeholder="Username">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Reenter Password">
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Sign In</h1>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <a href="#">Forget Your Password?</a>
+          <button>LogIn</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Already have a account?</h1>
+            <p>Click the SIGN-IN button to login with your credentials!</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Don't have an account??</h1>
+            <p>New here? Create your account by clicking on the SIGN-UP button!</p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 9000INC 2025 All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

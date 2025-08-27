@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>9000Inc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ******************* NAV SECTION ************** -->
+  <nav>
+    <img class="navbar-logo" src="images/9000incyt.jpg" alt="">
+
+    <div class="nav-menus">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#youtube">Youtube</a></li>
+        <li><a href="index.html#discord">Discord</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li>
+          <button id="logoutbutton">LOGOUT</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+<!-- Account Section -->
+  <section id="account">
+    <div class="account-container">
+      <h1>Welcome, <span id="username">Bhargav</span></h1>
+      <p>Your available funds: <strong id="funds">$120.00</strong></p>
+
+      <div class="payout-section">
+        <h2>Request Payout</h2>
+        <form id="payoutForm">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="1">
+          
+          <label for="method">Select Payout Method:</label>
+          <select id="method" name="method" required>
+            <option value="paypal">PayPal</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="crypto">Other</option>
+          </select>
+
+          <input type="text" placeholder="Note">
+          
+          <button type="submit">Request Payout</button>
+        </form>
+        <p id="payoutMessage"></p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- ******************* Login SECTION ************** -->
+
+
+  <div id="myContainer" class="overlay">
+
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Create Your Account</h1>
+          <input type="text" placeholder="Username">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Reenter Password">
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Sign In</h1>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <a href="#">Forget Your Password?</a>
+          <button>LogIn</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Already have a account?</h1>
+            <p>Click the SIGN-IN button to login with your credentials!</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Don't have an account??</h1>
+            <p>New here? Create your account by clicking on the SIGN-UP button!</p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <footer>
+    <p>&copy; 9000INC 2025 All Rights Reserved</p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
